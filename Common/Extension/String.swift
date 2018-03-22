@@ -79,14 +79,13 @@ extension String {
 
         let fromIndex: Int = from < 0 ? 0 : from
         let toIndex: Int
-
         if to == -1 || to > count {
             toIndex = count
         } else {
             toIndex = to
         }
 
-        return String(self[index(startIndex, offsetBy: fromIndex)..<index(startIndex, offsetBy: toIndex])
+        return String(self[index(startIndex, offsetBy: fromIndex)..<index(startIndex, offsetBy: toIndex)])
     }
 
     func substring(length: Int) -> String {
