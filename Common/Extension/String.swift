@@ -78,9 +78,15 @@ extension String {
     func substring(from: Int = 0, to: Int = -1) -> String {
 
         let fromIndex: Int = from < 0 ? 0 : from
-        let toIndex: Int = to > count ?  count : to
+        let toIndex: Int
 
-        return substring(with: index(startIndex, offsetBy: fromIndex)..<index(startIndex, offsetBy: toIndex))
+        if to == -1 || to > count {
+            toIndex = count
+        } else {
+            toIndex = to
+        }
+
+        return String(self[index(startIndex, offsetBy: fromIndex)..<index(startIndex, offsetBy: toIndex])
     }
 
     func substring(length: Int) -> String {
