@@ -74,7 +74,7 @@ public func  > (lhs: ApiClientErrorType, rhs: ApiClientErrorType) -> Bool {
     return lhs.toCode() > rhs.toCode()
 }
 
-public struct ApiClientError {
+public struct ApiClientError: Error {
     var type: ApiClientErrorType = ApiClientErrorType.UnknownError
     var response: ApiResponse?
 

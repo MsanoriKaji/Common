@@ -107,10 +107,10 @@ class ApiClient {
                                                       response: dataResponse.response ,
                                                       data: dataResponse.data, error: dataResponse.error)
                         switch response {
-                        case Result.Success(let result):
-                            handler?(Result<U, ApiClientError>.Success(result))
+                        case Result.success(let result):
+                            handler?(Result<U, ApiClientError>.success(result))
 
-                        case Result.Failure(let error):
+                        case Result.failure(let error):
                             handler?(Result<U, ApiClientError>(error: error))
                         }
                     })
@@ -149,10 +149,10 @@ class ApiClient {
                 Log.d( "Alamofire Error:\(error)")
                 if error.domain == NSURLErrorDomain && error.code == NSURLErrorCancelled {
                     // 明示的なキャンセルの場合はCancelとする
-                    return Result.Failure(ApiClientError(type: .Canceled))
+                    return Result.failure(ApiClientError(type: .Canceled))
                 } else {
                     // Alamofireのエラーの場合はNetworkError扱いとする
-                    return Result.Failure(ApiClientError(type: .NetworkError))
+                    return Result.failure(ApiClientError(type: .NetworkError))
                 }
 
             }
@@ -169,22 +169,22 @@ class ApiClient {
 
             guard let jsonDict =
                 try? JSONSerialization.jsonObject(with: validData, options: .allowFragments) as? [String: Any] else {
-                    return Result.Failure(ApiClientError(type: .JsonParseError))
+                    return Result.failure(ApiClientError(type: .JsonParseError))
             }
 
             if let _ = (jsonDict?["results"] as? NSDictionary)?["error"] {
-                return Result.Failure(ApiClientError(type: .APIError))
+                return Result.failure(ApiClientError(type: .APIError))
             }
 
             guard let parsedObject: T = Mapper<T>().map(JSON: jsonDict!) else {
-                return Result.Failure(ApiClientError(type: .MappingError))
+                return Result.failure(ApiClientError(type: .MappingError))
             }
 
 
             Log.i("parsedObject \(parsedObject)")
 
             //　正常終了
-            return Result.Success(parsedObject)
+            return Result.success(parsedObject)
 
     }
 
