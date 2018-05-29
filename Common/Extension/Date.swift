@@ -87,6 +87,33 @@ extension Date {
         return components.second!
     }
 
+    /// Dateの特定情報を再設定する
+    ///
+    /// - Parameters:
+    ///   - year: 年
+    ///   - month: 月
+    ///   - day: 日
+    ///   - hour: 時間
+    ///   - minute: 分
+    ///   - second: 秒
+    /// - Returns: 正常に更新できたかどうか
+    public mutating func setDateParm(year: Int? = nil, month: Int? = nil, day: Int? = nil,
+                                     hour: Int? = nil, minute: Int? = nil, second: Int? = nil) -> Bool {
+        var components = DateComponents()
+        components.year = year ?? self.year
+        components.month = month ?? self.month
+        components.day = day ?? self.day
+        components.hour = hour ?? self.hour
+        components.minute = minute ?? self.minute
+        components.second = second ?? self.second
+
+        if let newDate = Calendar.current.date(from: components) {
+            self = newDate
+            return true
+        }
+        return false
+    }
+
     static func create(year: Int, month: Int, day: Int, hour: Int = 0, minute: Int = 0, second: Int = 0) -> Date? {
         var components = DateComponents()
         components.year = year

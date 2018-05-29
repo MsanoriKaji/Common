@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65ACAC2320BD3AC900DC18E8 /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2220BD3AC900DC18E8 /* KeyedDecodingContainer.swift */; };
+		65ACAC2520BD3B0000DC18E8 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2420BD3B0000DC18E8 /* UIApplication.swift */; };
+		65ACAC2720BD3B5800DC18E8 /* ScrollStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2620BD3B5800DC18E8 /* ScrollStackView.swift */; };
+		65ACAC2920BD3B8100DC18E8 /* ScrollStackImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2820BD3B8100DC18E8 /* ScrollStackImageView.swift */; };
+		65ACAC2B20BD3BCA00DC18E8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2A20BD3BCA00DC18E8 /* UITableView.swift */; };
 		6DAF9E002059161E00935417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9DFF2059161E00935417 /* AppDelegate.swift */; };
 		6DAF9E022059161E00935417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E012059161E00935417 /* ViewController.swift */; };
 		6DAF9E052059161E00935417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAF9E032059161E00935417 /* Main.storyboard */; };
@@ -18,7 +23,7 @@
 		6DAF9E1A205A0BD500935417 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E19205A0BD500935417 /* UIButton.swift */; };
 		6DAF9E1D205A112800935417 /* BaseNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E1C205A112800935417 /* BaseNetworkModel.swift */; };
 		6DAF9E1F205A115300935417 /* BaseResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E1E205A115300935417 /* BaseResultEntity.swift */; };
-		6DAF9E22205A141400935417 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E21205A141400935417 /* File.swift */; };
+		6DAF9E22205A141400935417 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E21205A141400935417 /* Log.swift */; };
 		6DAF9E24205A145900935417 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E23205A145900935417 /* DateFormatter.swift */; };
 		6DAF9E26205A14CF00935417 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E25205A14CF00935417 /* BaseObject.swift */; };
 		6DAF9E28205A150000935417 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF9E27205A150000935417 /* ApiClient.swift */; };
@@ -40,6 +45,11 @@
 
 /* Begin PBXFileReference section */
 		105C93DD895A9567884ADEBB /* Pods_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65ACAC2220BD3AC900DC18E8 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		65ACAC2420BD3B0000DC18E8 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		65ACAC2620BD3B5800DC18E8 /* ScrollStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackView.swift; sourceTree = "<group>"; };
+		65ACAC2820BD3B8100DC18E8 /* ScrollStackImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackImageView.swift; sourceTree = "<group>"; };
+		65ACAC2A20BD3BCA00DC18E8 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		6DAF9DFC2059161E00935417 /* Common.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Common.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAF9DFF2059161E00935417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DAF9E012059161E00935417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +63,7 @@
 		6DAF9E19205A0BD500935417 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		6DAF9E1C205A112800935417 /* BaseNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkModel.swift; sourceTree = "<group>"; };
 		6DAF9E1E205A115300935417 /* BaseResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResultEntity.swift; sourceTree = "<group>"; };
-		6DAF9E21205A141400935417 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6DAF9E21205A141400935417 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		6DAF9E23205A145900935417 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		6DAF9E25205A14CF00935417 /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		6DAF9E27205A150000935417 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
@@ -146,6 +156,9 @@
 				6DAF9E3B205A24F200935417 /* UIColor.swift */,
 				6DAF9E15205919CD00935417 /* UIImageView.swift */,
 				6DAF9E3D205A251600935417 /* UIView.swift */,
+				65ACAC2220BD3AC900DC18E8 /* KeyedDecodingContainer.swift */,
+				65ACAC2420BD3B0000DC18E8 /* UIApplication.swift */,
+				65ACAC2A20BD3BCA00DC18E8 /* UITableView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -176,7 +189,7 @@
 		6DAF9E20205A140600935417 /* Log */ = {
 			isa = PBXGroup;
 			children = (
-				6DAF9E21205A141400935417 /* File.swift */,
+				6DAF9E21205A141400935417 /* Log.swift */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -185,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				6DAF9E42205A25BD00935417 /* BorderView.swift */,
+				65ACAC2620BD3B5800DC18E8 /* ScrollStackView.swift */,
+				65ACAC2820BD3B8100DC18E8 /* ScrollStackImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,20 +335,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ACAC2520BD3B0000DC18E8 /* UIApplication.swift in Sources */,
 				6DAF9E1F205A115300935417 /* BaseResultEntity.swift in Sources */,
 				6DAF9E3C205A24F200935417 /* UIColor.swift in Sources */,
 				6DAF9E3E205A251600935417 /* UIView.swift in Sources */,
+				65ACAC2720BD3B5800DC18E8 /* ScrollStackView.swift in Sources */,
 				6DAF9E16205919CD00935417 /* UIImageView.swift in Sources */,
 				6DAF9E43205A25BD00935417 /* BorderView.swift in Sources */,
 				6DAF9E3A205A249500935417 /* String.swift in Sources */,
 				6DAF9E022059161E00935417 /* ViewController.swift in Sources */,
 				6DAF9E38205A242100935417 /* NSNumber.swift in Sources */,
 				6DAF9E13205918BB00935417 /* KingFisher.swift in Sources */,
+				65ACAC2920BD3B8100DC18E8 /* ScrollStackImageView.swift in Sources */,
 				6DAF9E24205A145900935417 /* DateFormatter.swift in Sources */,
 				6DAF9E32205A168E00935417 /* ApiResponse.swift in Sources */,
 				6DAF9E34205A238A00935417 /* Date.swift in Sources */,
 				6DAF9E45205A402E00935417 /* ApiResult.swift in Sources */,
 				6DAF9E18205A0B1A00935417 /* RoundRectButton.swift in Sources */,
+				65ACAC2B20BD3BCA00DC18E8 /* UITableView.swift in Sources */,
 				6DAF9E1D205A112800935417 /* BaseNetworkModel.swift in Sources */,
 				6DAF9E26205A14CF00935417 /* BaseObject.swift in Sources */,
 				6DAF9E002059161E00935417 /* AppDelegate.swift in Sources */,
@@ -341,10 +360,11 @@
 				6DAF9E30205A165800935417 /* ApiClientError.swift in Sources */,
 				6DAF9E36205A23CB00935417 /* IndexPath.swift in Sources */,
 				6DAF9E40205A257D00935417 /* Int.swift in Sources */,
-				6DAF9E22205A141400935417 /* File.swift in Sources */,
+				6DAF9E22205A141400935417 /* Log.swift in Sources */,
 				6DAF9E1A205A0BD500935417 /* UIButton.swift in Sources */,
 				6DAF9E2E205A15EE00935417 /* ApiRequest.swift in Sources */,
 				6DAF9E28205A150000935417 /* ApiClient.swift in Sources */,
+				65ACAC2320BD3AC900DC18E8 /* KeyedDecodingContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

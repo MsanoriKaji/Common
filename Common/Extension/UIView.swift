@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 extension UIView {
 
@@ -110,5 +111,15 @@ extension UIView {
         UIGraphicsEndImageContext()
 
         return image
+    }
+}
+
+// MARK: - SnapKit
+extension UIView {
+    public func addFixSubView(_ view: UIView) {
+        self.addSubview(view)
+        view.snp.makeConstraints { make in
+            make.top.left.bottom.right.equalToSuperview()
+        }
     }
 }

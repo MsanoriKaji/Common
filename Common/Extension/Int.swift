@@ -9,12 +9,20 @@
 import Foundation
 
 extension Int {
-    var float: Float {
+    public var float: Float {
         return Float(self)
     }
 
-    var double: Double {
+    public var cgFloat: CGFloat {
+        return CGFloat(self)
+    }
+
+    public var double: Double {
         return  Double(self)
+    }
+
+    public var bool: Bool {
+        return (self as NSNumber).boolValue
     }
 
     /**
