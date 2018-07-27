@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65215F84210AB000004733C2 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65215F83210AB000004733C2 /* BaseTabBarController.swift */; };
 		65ACAC2320BD3AC900DC18E8 /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2220BD3AC900DC18E8 /* KeyedDecodingContainer.swift */; };
 		65ACAC2520BD3B0000DC18E8 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2420BD3B0000DC18E8 /* UIApplication.swift */; };
 		65ACAC2720BD3B5800DC18E8 /* ScrollStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ACAC2620BD3B5800DC18E8 /* ScrollStackView.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		105C93DD895A9567884ADEBB /* Pods_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65215F83210AB000004733C2 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		65ACAC2220BD3AC900DC18E8 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
 		65ACAC2420BD3B0000DC18E8 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		65ACAC2620BD3B5800DC18E8 /* ScrollStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				6DAF9E062059161E00935417 /* Assets.xcassets */,
 				6DAF9E082059161E00935417 /* LaunchScreen.storyboard */,
 				6DAF9E0B2059161E00935417 /* Info.plist */,
+				65215F83210AB000004733C2 /* BaseTabBarController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				6DAF9E38205A242100935417 /* NSNumber.swift in Sources */,
 				6DAF9E13205918BB00935417 /* KingFisher.swift in Sources */,
 				65ACAC2920BD3B8100DC18E8 /* ScrollStackImageView.swift in Sources */,
+				65215F84210AB000004733C2 /* BaseTabBarController.swift in Sources */,
 				6DAF9E24205A145900935417 /* DateFormatter.swift in Sources */,
 				6DAF9E32205A168E00935417 /* ApiResponse.swift in Sources */,
 				6DAF9E34205A238A00935417 /* Date.swift in Sources */,
